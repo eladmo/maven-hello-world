@@ -42,7 +42,7 @@ jobs:
         uses: mickem/gh-action-bump-maven-version@v1.0.0
         with:
           # Where to find the pom file
-          pom-file: pom.xml
+          pom-file: /my-app/pom.xml
           # Command to update the version
           bump-command: mvn org.codehaus.mojo:versions-maven-plugin:set -DnewVersion=@NEW_VERSION@
           # Path to version in pom file
